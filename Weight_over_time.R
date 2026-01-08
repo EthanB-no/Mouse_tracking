@@ -6,7 +6,7 @@ df$Mouse.ID <- as.factor(df$Mouse.ID)
 cages <- unique(df$Cage)
 
 # Timestamp for title & filename
-ts <- format(Sys.time(), "%Y-%m-%d_%H-%M")
+ts <- format(Sys.time(), "%Y-%m-%d")
 
 for (c in cages) {
   
@@ -27,7 +27,7 @@ for (c in cages) {
     theme_bw() +
     theme(
       text = element_text(size = 16),        # increase ALL text
-      plot.title = element_text(size = 20, face = "bold"),
+      plot.title = element_text(size = 18, face = "bold"),
       legend.title = element_text(size = 16),
       legend.text = element_text(size = 16)
     )
