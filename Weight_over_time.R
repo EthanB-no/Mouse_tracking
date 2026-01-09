@@ -1,6 +1,8 @@
 library(ggplot2)
 library(dplyr)
 
+df <- read.csv("./Mouse_weight.csv")
+
 df$Mouse.ID <- as.factor(df$Mouse.ID)
 
 cages <- unique(df$Cage)
